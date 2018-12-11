@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InfluxAndroidTask</string>
+    <string name="combos">Combos</string>
+    <string name="drinks">Drinks</string>
+    <string name="crepes">Crepes</string>
+    <string name="tool_bar_title">F\u0026B</string>
+    <string name="skip">Skip</string>
+    <string name="pay">Pay</string>
+    <string name="item_count">Item Count</string>
+    <string name="quantity">Quantity :</string>
+    <string name="total_amt">Total Amt :</string>
+    <string name="fb_summary"><![CDATA[F&B Summary]]></string>
+</resources>

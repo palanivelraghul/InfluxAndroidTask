@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_56_dp"
+    android:background="@android:color/black">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/toolbar_button_action_left"
+        android:layout_width="@dimen/dimen_56_dp"
+        android:layout_height="@dimen/dimen_56_dp"
+        android:padding="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tool_bar_title"
+        android:textSize="@dimen/dimen_26_sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/toolbar_text_action_right"
+        app:layout_constraintLeft_toRightOf="@id/toolbar_button_action_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/toolbar_text_action_right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_56_dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dimen_16_dp"
+        android:textAllCaps="true"
+        android:textColor="#98aeb2"
+        android:textSize="@dimen/dimen_18_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/skip" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dimen_18_dp"
+        android:layout_marginRight="@dimen/dimen_8_dp"
+        android:background="#98aeb2"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

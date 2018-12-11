@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/design_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/yellow"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="@dimen/dimen_0_dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/tv_summary_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8_dp"
+        android:padding="5dp"
+        android:text="@string/fb_summary"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_26_sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_final_product_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8_dp"
+        app:layout_constraintBottom_toTopOf="@id/cl_amount_qty_summary"
+        app:layout_constraintTop_toBottomOf="@id/tv_summary_heading" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_amount_qty_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tv_total_value_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_8_dp"
+            android:text="@string/total_amt"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_22_sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_total_value" />
+
+        <TextView
+            android:id="@+id/tv_total_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8_dp"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:layout_marginBottom="@dimen/dimen_8_dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_22_sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/tv_total_value_label"
+            tools:text="1025353" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

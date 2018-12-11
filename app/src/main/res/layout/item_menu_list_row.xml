@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_10_dp"
+    android:background="@drawable/bg_item_row"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/img_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_180_dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_8_dp"
+        android:layout_marginTop="@dimen/dimen_8_dp"
+        android:layout_marginEnd="@dimen/dimen_8_dp"
+        android:layout_marginBottom="@dimen/dimen_8_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_item_image">
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16_dp"
+            android:layout_marginBottom="@dimen/dimen_8_dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_item_code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="ITEM NAME" />
+
+        <TextView
+            android:id="@+id/tv_item_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_16_sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_item_name"
+            tools:text="ITEM CODE-10" />
+
+        <TextView
+            android:id="@+id/tv_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8_dp"
+            android:layout_marginEnd="@dimen/dimen_16_dp"
+            android:layout_marginBottom="@dimen/dimen_8_dp"
+            android:padding="@dimen/dimen_8_dp"
+            android:text="-"
+            android:textSize="@dimen/dimen_22_sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_qty"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16_dp"
+            android:text="99"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_22_sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_minus"
+            app:layout_constraintEnd_toStartOf="@+id/tv_plus"
+            app:layout_constraintTop_toTopOf="@+id/tv_minus" />
+
+        <TextView
+            android:id="@+id/tv_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16_dp"
+            android:padding="@dimen/dimen_8_dp"
+            android:text="+"
+            android:textSize="@dimen/dimen_22_sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_qty"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_qty" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
